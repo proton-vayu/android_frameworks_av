@@ -23,6 +23,10 @@ cc_library {
         "external/libavc/decoder",
         "external/libavc/common",
     ],
+
+    lto: {
+        never: true,
+    },
 }
 
 cc_library {
@@ -45,4 +49,8 @@ cc_library {
     cflags: [
         "-Wno-unused-variable",
     ],
+
+    lto: {
+        never: true,
+    },
 }

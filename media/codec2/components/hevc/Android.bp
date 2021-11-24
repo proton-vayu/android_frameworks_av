@@ -19,6 +19,9 @@ cc_library {
 
     static_libs: ["libhevcdec"],
 
+    lto: {
+        never: true,
+    },
 }
 
 cc_library {
@@ -33,4 +36,7 @@ cc_library {
 
     static_libs: ["libhevcenc"],
 
+    lto: {
+        never: true,
+    },
 }

@@ -31,4 +31,8 @@ cc_library_shared {
     },
 
     ldflags: ["-Wl,-Bsymbolic"],
+
+    lto: {
+        never: true,
+    },
 }
